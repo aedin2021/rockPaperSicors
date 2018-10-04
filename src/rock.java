@@ -1,3 +1,5 @@
+import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+
 import java.util.Scanner;
 
 import static javafx.scene.input.KeyCode.Y;
@@ -9,6 +11,16 @@ public class rock {
         String playagin;
         boolean y;
         String yesOrNo;
+       /* String computer;
+        String mace;
+        String sword;
+        String knife;
+
+        String[] arr = new String[3];
+        arr[0]= mace;
+        arr[1]= sword;
+        arr[2]=knife;*/
+       y = true;
 
             System.out.println("This is a game of mace, knife, and sword.");
             System.out.print(" you'll be face the computer to see who wins");
@@ -17,11 +29,13 @@ public class rock {
 
             System.out.println("Do you want to go again?(Y/N)");
             yesOrNo = key.nextLine();
-        do { if (){
+       while ((y)) {
                 System.out.println("This is a game of mace, knife, and sword.");
                 System.out.print(" you'll be face the computer to see who wins");
                 System.out.println("How you win is mace beats knife, knife beats sword, and sword beats mace.");
-            }} while (playagin.equalsIgnoreCase("y"));
+            }if (yesOrNo.equalsIgnoreCase("n")) y=false;
+       else if (yesOrNo.equalsIgnoreCase("y")); y=true;
+
 
 
 
