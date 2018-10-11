@@ -11,6 +11,7 @@ public class rock {
         String playagin;
         boolean y;
         String yesOrNo;
+        y=true;
        /* String computer;
         String mace;
         String sword;
@@ -20,7 +21,7 @@ public class rock {
         arr[0]= mace;
         arr[1]= sword;
         arr[2]=knife;*/
-       y = true;
+
 
             System.out.println("This is a game of mace, knife, and sword.");
             System.out.print(" you'll be face the computer to see who wins");
@@ -29,17 +30,13 @@ public class rock {
 
             System.out.println("Do you want to go again?(Y/N)");
             yesOrNo = key.nextLine();
-       while ((y)) {
+
+       while ((yesOrNo.equalsIgnoreCase("y"))) {
                 System.out.println("This is a game of mace, knife, and sword.");
                 System.out.print(" you'll be face the computer to see who wins");
                 System.out.println("How you win is mace beats knife, knife beats sword, and sword beats mace.");
-            }if (yesOrNo.equalsIgnoreCase("n")) y=false;
-       else if (yesOrNo.equalsIgnoreCase("y")); y=true;
-
-
-
-
-
+            }if (yesOrNo.equalsIgnoreCase("n"));
+        else if (yesOrNo.equalsIgnoreCase("y"));
 
 
 
