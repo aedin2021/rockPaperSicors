@@ -1,10 +1,9 @@
-import com.sun.xml.internal.fastinfoset.util.StringArray;
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 
-import java.util.Random;
+
+
 import java.util.Scanner;
 
-import static javafx.scene.input.KeyCode.Y;
+
 
 public class rock {
     public static void main(String[]args){
@@ -15,12 +14,12 @@ public class rock {
         String mace;
         String sword;
         String knife;
+        String thing;
 
-
-        int[] arr = new int[]{0,1,2};
-        arr[0] = mace;
-        arr[1] = knife;
-        arr[2] = sword;
+        int[] arr;arr = new int[3];
+        arr[0] = new thing(1,"mace");
+        arr[2] = 20;
+        arr[1] = 30;
 
        do {System.out.println("This is a game of mace, knife, and sword.");
 
@@ -34,19 +33,7 @@ public class rock {
            yesOrNo = key.nextByte();
        } while (yesOrNo == 1);
         if (yesOrNo ==2);{
-            System.out.println("Just know your next");
+            System.out.println("YOU BETRAYED ME!");
         }
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
